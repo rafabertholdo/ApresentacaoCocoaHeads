@@ -39,7 +39,7 @@
 {
     //Evitar Memory Cicle
     __weak AlunosTableViewController *weakSelf = self;
-    [URLConnection get:@"http://192.168.234.110/testecrud/api/alunos" successBlock:^(NSData *data, id jsonData) {
+    [URLConnection get:@"http://testecrudwebapi.elasticbeanstalk.com/api/alunos" successBlock:^(NSData *data, id jsonData) {
         weakSelf.alunos = jsonData;
         [weakSelf.tableView reloadData];
     } errorBlock:^(NSError *error) {
@@ -65,7 +65,7 @@
         
         //Evitar Memory Cicle
         __weak AlunosTableViewController *weakSelf = self;
-        [URLConnection delete:[NSString stringWithFormat:@"http://192.168.234.110/testecrud/api/alunos/%@", _id] successBlock:^(NSData *data, id jsonData) {
+        [URLConnection delete:[NSString stringWithFormat:@"http://testecrudwebapi.elasticbeanstalk.com/api/alunos/%@", _id] successBlock:^(NSData *data, id jsonData) {
             [weakSelf reloadData];
         } errorBlock:nil completeBlock:nil];
     }
