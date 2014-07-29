@@ -51,7 +51,7 @@
                                 @"Nome": self.txtNomeAluno.text,
                                 @"Matriculado": [NSNumber numberWithBool: self.swtMatriculado.isOn]};
         
-        [URLConnection post:@"http://192.168.234.110/testecrud/api/alunos" withObject:aluno successBlock:nil errorBlock:nil completeBlock:^{
+        [URLConnection post:@"http://testecrudwebapi.elasticbeanstalk.com/api/alunos" withObject:aluno successBlock:nil errorBlock:nil completeBlock:^{
             [weakSelf.reloadDelegate reloadData];
             [weakSelf.navigationController popViewControllerAnimated:YES];
         }];
@@ -71,7 +71,7 @@
                                 @"Matriculado": [NSNumber numberWithBool: self.swtMatriculado.isOn]};
         
         
-        [URLConnection put:[NSString stringWithFormat:@"http://192.168.234.110/testecrud/api/alunos/%@", [self.aluno objectForKey:@"Id"]] withObject:aluno successBlock:nil errorBlock:nil
+        [URLConnection put:[NSString stringWithFormat:@"http://testecrudwebapi.elasticbeanstalk.com/api/alunos/%@", [self.aluno objectForKey:@"Id"]] withObject:aluno successBlock:nil errorBlock:nil
              completeBlock:^{
             [weakSelf.reloadDelegate reloadData];
             [weakSelf.navigationController popViewControllerAnimated:YES];
