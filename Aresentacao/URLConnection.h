@@ -29,8 +29,6 @@ typedef void (^completeBlock_t)();
 
 - (id)initWithRequest:(NSString *)requestUrl successBlock:(successBlock_t)successBlock errorBlock:(errorBlock_t)errorBlock completeBlock:(completeBlock_t) completeBlock;
 
-- (id)initWithRequest:(NSString *)requestUrl withContent:(NSString*)content successBlock:(successBlock_t)successBlock errorBlock:(errorBlock_t)errorBlock completeBlock:(completeBlock_t) completeBlock;
-
 - (id) initWithRequest:(NSString *)requestUrl withMethod:(NSString*)method successBlock:(successBlock_t)successBlock errorBlock:(errorBlock_t)errorBlock  completeBlock:(completeBlock_t) completeBlock;
 
 @end

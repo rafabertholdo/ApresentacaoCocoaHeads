@@ -99,9 +99,6 @@
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
         
         [request setHTTPMethod:method];
-//        [request setValue:@"application/json" forHTTPHeaderField:@"Content-type"];
-//        [request setValue:[NSString stringWithFormat:@"%d", [dataJsonRequest length]] forHTTPHeaderField:@"Content-Length"];
-//        [request setHTTPBody: dataJsonRequest];
         
         [NSURLConnection connectionWithRequest:request delegate:self];
     }
@@ -109,28 +106,6 @@
     return self;
 }
 
-- (id) initWithRequest:(NSString *)requestUrl withData:(NSData*)dataJsonRequest successBlock:(successBlock_t)successBlock errorBlock:(errorBlock_t)errorBlock  completeBlock:(completeBlock_t) completeBlock
-{
-    if ((self=[super init])) {
-        data_ = [[NSMutableData alloc] init];
-        
-        successBlock_ = [successBlock copy];
-        completeBlock_ = [completeBlock copy];
-        errorBlock_ = [errorBlock copy];
-        
-        NSURL *url = [NSURL URLWithString:requestUrl];
-        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-        
-        [request setHTTPMethod:@"POST"];
-        [request setValue:@"application/json" forHTTPHeaderField:@"Content-type"];
-        [request setValue:[NSString stringWithFormat:@"%d", [dataJsonRequest length]] forHTTPHeaderField:@"Content-Length"];
-        [request setHTTPBody: dataJsonRequest];
-        
-        [NSURLConnection connectionWithRequest:request delegate:self];
-    }
-    
-    return self;
-}
 
 - (id) initWithRequest:(NSString *)requestUrl withContent:(NSString*)content withMethod:(NSString*)method successBlock:(successBlock_t)successBlock errorBlock:(errorBlock_t)errorBlock  completeBlock:(completeBlock_t) completeBlock
 {
