@@ -14,13 +14,15 @@
 		4A79110C198552B50054855D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A79110B198552B50054855D /* main.m */; };
 		4A791110198552B50054855D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A79110F198552B50054855D /* AppDelegate.m */; };
 		4A791113198552B50054855D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A791111198552B50054855D /* Main.storyboard */; };
-		4A791116198552B50054855D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A791115198552B50054855D /* ViewController.m */; };
 		4A791118198552B50054855D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A791117198552B50054855D /* Images.xcassets */; };
 		4A79111F198552B50054855D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A79111E198552B50054855D /* XCTest.framework */; };
 		4A791120198552B50054855D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7910FF198552B50054855D /* Foundation.framework */; };
 		4A791121198552B50054855D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A791103198552B50054855D /* UIKit.framework */; };
 		4A791129198552B50054855D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A791127198552B50054855D /* InfoPlist.strings */; };
 		4A79112B198552B50054855D /* AresentacaoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A79112A198552B50054855D /* AresentacaoTests.m */; };
+		4A7911361985530E0054855D /* URLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7911351985530E0054855D /* URLConnection.m */; };
+		4A7911391985559A0054855D /* AlunosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7911381985559A0054855D /* AlunosTableViewController.m */; };
+		4A79113C1985596C0054855D /* AlunoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A79113B1985596C0054855D /* AlunoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +47,18 @@
 		4A79110E198552B50054855D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4A79110F198552B50054855D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4A791112198552B50054855D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4A791114198552B50054855D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4A791115198552B50054855D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4A791117198552B50054855D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4A79111D198552B50054855D /* AresentacaoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AresentacaoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A79111E198552B50054855D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4A791126198552B50054855D /* AresentacaoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AresentacaoTests-Info.plist"; sourceTree = "<group>"; };
 		4A791128198552B50054855D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4A79112A198552B50054855D /* AresentacaoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AresentacaoTests.m; sourceTree = "<group>"; };
+		4A7911341985530E0054855D /* URLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLConnection.h; sourceTree = "<group>"; };
+		4A7911351985530E0054855D /* URLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLConnection.m; sourceTree = "<group>"; };
+		4A7911371985559A0054855D /* AlunosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlunosTableViewController.h; sourceTree = "<group>"; };
+		4A7911381985559A0054855D /* AlunosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlunosTableViewController.m; sourceTree = "<group>"; };
+		4A79113A1985596C0054855D /* AlunoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlunoViewController.h; sourceTree = "<group>"; };
+		4A79113B1985596C0054855D /* AlunoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlunoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +118,17 @@
 		4A791105198552B50054855D /* Aresentacao */ = {
 			isa = PBXGroup;
 			children = (
+				4A7911341985530E0054855D /* URLConnection.h */,
+				4A7911351985530E0054855D /* URLConnection.m */,
 				4A79110E198552B50054855D /* AppDelegate.h */,
 				4A79110F198552B50054855D /* AppDelegate.m */,
 				4A791111198552B50054855D /* Main.storyboard */,
-				4A791114198552B50054855D /* ViewController.h */,
-				4A791115198552B50054855D /* ViewController.m */,
 				4A791117198552B50054855D /* Images.xcassets */,
 				4A791106198552B50054855D /* Supporting Files */,
+				4A7911371985559A0054855D /* AlunosTableViewController.h */,
+				4A7911381985559A0054855D /* AlunosTableViewController.m */,
+				4A79113A1985596C0054855D /* AlunoViewController.h */,
+				4A79113B1985596C0054855D /* AlunoViewController.m */,
 			);
 			path = Aresentacao;
 			sourceTree = "<group>";
@@ -249,9 +259,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A791116198552B50054855D /* ViewController.m in Sources */,
+				4A7911361985530E0054855D /* URLConnection.m in Sources */,
+				4A79113C1985596C0054855D /* AlunoViewController.m in Sources */,
 				4A791110198552B50054855D /* AppDelegate.m in Sources */,
 				4A79110C198552B50054855D /* main.m in Sources */,
+				4A7911391985559A0054855D /* AlunosTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +468,7 @@
 				4A791130198552B50054855D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A791131198552B50054855D /* Build configuration list for PBXNativeTarget "AresentacaoTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +477,7 @@
 				4A791133198552B50054855D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

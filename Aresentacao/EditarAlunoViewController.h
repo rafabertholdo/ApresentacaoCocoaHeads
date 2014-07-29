@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  EditarAlunoViewController.h
 //  Aresentacao
 //
 //  Created by Rafael Bertholdo on 7/27/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface EditarAlunoViewController : UIViewController
+@property (weak, nonatomic) NSDictionary *aluno;
 @end
